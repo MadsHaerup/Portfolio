@@ -1,26 +1,33 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
 .footer__contact {
   display: grid;
+  place-content: center;
   background: linear-gradient(#09204d, #010817);
-}
-.footer__mailto {
-  place-self: center;
-  display: grid;
+  background-image: linear-gradient(to right bottom, #09204d, #152e6b, #243b89, #3649a9, #4b57c9, #5255c9, #5852c9, #5f4fc9, #543caa, #472a8c, #3a186f, #2b0654);
 }
 .reach-out {
-  font-size: 10em;
+  font-size: 10vw;
   margin: 0;
   place-self: center;
+  color: #20123a;
 }
-th span {
+th a {
   color: #fff;
-  font-size: 1.5em;
+  font-size: 2vw;
+  text-decoration: none;
+  padding: 1em;
+}
+.contact-links {
+  height: 100px;
 }
 .contact-links th::before {
   content: "";
   display: block;
   margin: 0 auto .5rem;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   background-size: contain;
 }
 .contact-links th.whatsapp::before {
@@ -29,14 +36,15 @@ th span {
 .contact-links th.mailto::before {
   background-image: url(paper-plane.svg);
 }
-.github-codepen-linkedin {
-  place-self: center;
-  font-size: 40px;
-  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-  background: linear-gradient(#09204d, #010817);
-  padding: 2em;
+.contact-links th.linkedin::before {
+  background-image: url(linkedin.svg);
 }
-.contact-links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+@media only screen and (max-width: 800px) {
+  .contact-links th::before {
+    width: 50px;
+    height: 50px;
+  }
+  th a {
+    font-size: 3vw;
+  }
 }
