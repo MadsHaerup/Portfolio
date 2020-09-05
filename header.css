@@ -68,7 +68,6 @@ nav li a {
   grid-template-columns: repeat(3, 1fr);
   place-self: center;
   font-size: 3vw;
-  padding: 0.8em;
 }
 .linkedin, .github, .codepen {
   color: #321c64;
