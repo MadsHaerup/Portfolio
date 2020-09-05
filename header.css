@@ -1,24 +1,108 @@
 body {
   font-family: 'Inter', sans-serif;
+  height: 2000px;
 }
 
 /* ──────────────────────────────────────────────────────────────────────────────── */
 
+.link-logo2 {
+  display: none;
+}
+#burgerMenu {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
 header {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 0px 20px 60px rgba(10, 51, 51, 0.2);
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  background: #fffbfb;
 }
-.link-logo {
+nav {
+  display: grid;
+}
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+nav li a {
+  text-decoration: none;
+  color: #20123a;
+}
+.link-logo1, .link-logo2 {
   place-self: center;
   grid-column: 1/2;
 }
 .github-codepen-linkedin {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   place-self: center;
-  font-size: 40px;
-  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-  background: linear-gradient(#09204d, #010817);
-  padding: 2em;
+  font-size: 3vw;
+  padding: 0.8em;
 }
 .linkedin, .github, .codepen {
-  color: #fff;
+  color: #321c64;
+}
+@media only screen and (max-width: 800px) {
+  .nav-links {
+    font-size: 3vw;
+  }
+  .nav-links li:nth-child(1), .nav-links li:nth-child(2) {
+    padding-right: 1em;
+  }
+  .github-codepen-linkedin {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .link-logo1 {
+    display: none;
+  }
+  .link-logo2 {
+    display: block;
+  }
+  .nav-links {
+    grid-template-columns: 1fr;
+    font-size: 4vw;
+  }
+  .nav-links li:nth-child(1), .nav-links li:nth-child(2) {
+    margin-bottom: 1em;
+    padding-right: 0;
+  }
+  .github-codepen-linkedin a {
+    margin-bottom: 0.2em;
+    font-size: 7vw;
+  }
 }
