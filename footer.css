@@ -1,0 +1,32 @@
+.footer__contact {
+  height: 60vh;
+  display: grid;
+  background: linear-gradient(#09204d, #010817);
+}
+.footer__mailto {
+  place-self: center;
+  display: grid;
+}
+.reach-out {
+  font-size: 10em;
+  margin: 0;
+  place-self: center;
+}
+th span {
+  color: #fff;
+  font-size: 1.5em;
+}
+.contact-links th::before {
+  content: "";
+  display: block;
+  margin: 0 auto .5rem;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+}
+.contact-links th.whatsapp::before {
+  background-image: url(whatsapp.svg);
+}
+.contact-links th.mailto::before {
+  background-image: url(paper-plane.svg);
+}
