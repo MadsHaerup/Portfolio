@@ -1,5 +1,54 @@
-.skillset {
+body {
+  font-family: 'Inter', sans-serif;
+}
+.coding__skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  place-content: center;
+  list-style: none;
+  grid-gap: 1em;
+  text-align: center;
+}
+.skillset__headline {
+  color: #20123a;
+  font-size: 3em;
+  font-weight: 600;
+}
+.skillset__description {
+  color: #20123a;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.coding__skills li::before {
+  content: "";
+  display: block;
+  margin: 0 auto .5rem;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+}
+.coding__skills li.js::before {
+  background-image: url(js.svg);
+}
+.coding__skills li.css::before {
+  background-image: url(css.svg);
+}
+.coding__skills li.html::before {
+  background-image: url(html-5.svg);
+}
+.coding__skills li.git::before {
+  background-image: url(git.svg);
+}
+.coding__skills li.scrum::before {
+  background-image: url(agile.svg);
+}
+.js, .css, .html, .scrum, .git {
+  box-shadow: 0px 20px 60px rgba(10, 51, 51, 0.2);
+  background-color: #fff;
+  padding: 1em;
+}
+@media only screen and (max-width: 600px) {
+  .coding__skills {
+    grid-template-columns: 1fr;
+  }
 }
