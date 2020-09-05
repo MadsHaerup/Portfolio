@@ -12,6 +12,8 @@ body {
   margin: 0;
   place-self: center;
   color: #20123a;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 th a {
   color: #fff;
