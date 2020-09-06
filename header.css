@@ -1,6 +1,5 @@
 body {
   font-family: 'Inter', sans-serif;
-  height: 2000px;
 }
 
 /* ──────────────────────────────────────────────────────────────────────────────── */
@@ -34,11 +33,15 @@ body {
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  box-shadow: 0px 20px 60px rgba(10, 51, 51, 0.2);
   position: fixed;
   top: 40px;
   width: 100%;
   background: #fffbfb;
+  z-index: 2;
+}
+header.current {
+  box-shadow: 0px 20px 60px rgba(10, 51, 51, 0.2);
+  opacity: 0.8;
 }
 nav {
   display: grid;
@@ -58,6 +61,9 @@ nav {
 nav li a {
   text-decoration: none;
   color: #20123a;
+}
+nav li a:hover {
+  text-decoration: underline;
 }
 .link-logo1, .link-logo2 {
   place-self: center;

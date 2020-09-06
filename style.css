@@ -1,0 +1,29 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fffbfb;
+}
+html {
+  scroll-behavior: smooth;
+}
+#wrapper {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: "top" "hero" "pro" "skill" "foot";
+  grid-template-rows: 1fr 3fr 3fr 3fr 2fr;
+  grid-template-columns: 1fr;
+}
+#wrapper>#top {
+  grid-area: top;
+}
+#wrapper>.hero {
+  grid-area: hero;
+}
+#wrapper>.projects {
+  grid-area: pro;
+}
+#wrapper>.skillset {
+  grid-area: skill;
+}
+#wrapper>.footer__contact {
+  grid-area: foot;
+}

@@ -7,3 +7,17 @@ $(function() {
   });
 
 });
+
+let header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  let fromTop = window.scrollY;
+  if (
+    header.offsetTop <= fromTop
+  ) {
+    header.classList.add("current");
+  } else {
+    header.classList.remove("current");
+  }
+
+});
