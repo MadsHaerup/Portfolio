@@ -17,7 +17,7 @@ body {
 }
 .skillset__headline {
   color: #20123a;
-  font-size: 4em;
+  font-size: 6vw;
   font-weight: 600;
   margin: 1em 0 1em 5vw;
 }
@@ -36,19 +36,19 @@ body {
   background-size: contain;
 }
 .coding__skills li.js::before {
-  background-image: url(js.svg);
+  background-image: url(img/js.svg);
 }
 .coding__skills li.css::before {
-  background-image: url(css.svg);
+  background-image: url(img/css.svg);
 }
 .coding__skills li.html::before {
-  background-image: url(html-5.svg);
+  background-image: url(img/html-5.svg);
 }
 .coding__skills li.git::before {
-  background-image: url(git.svg);
+  background-image: url(img/git.svg);
 }
 .coding__skills li.scrum::before {
-  background-image: url(agile.svg);
+  background-image: url(img/agile.svg);
 }
 .js, .css, .html, .scrum, .git {
   box-shadow: 0px 20px 60px rgba(10, 51, 51, 0.2);

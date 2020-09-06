@@ -27,3 +27,13 @@ html {
 #wrapper>.footer__contact {
   grid-area: foot;
 }
+@media only screen and (max-width: 900px) {
+  #wrapper {
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    grid-template-rows: 1.1fr 1fr 1fr 4fr 1fr;
+  }
+}

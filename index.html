@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="skillset.css">
   <link rel="stylesheet" href="projects.css">
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <div id="burgerMenu" class="change">
@@ -29,31 +28,30 @@
 <body>
   <div id="wrapper">
     <header id="top">
-
-      <a href="#top" class="link-logo1"><img src="logo-mid.svg" alt="logo" class="logo1"></a>
-      <a href="#top" class="link-logo2"><img src="logo-sm.svg" alt="logo" class="logo2"></a>
+      <a href="#landingPage" class="link-logo1"><img src="img/logo-mid.svg" alt="logo" class="logo1"></a>
+      <a href="#landingPage" class="link-logo2"><img src="img/logo-sm.svg" alt="logo" class="logo2"></a>
       <nav>
         <ul class="nav-links">
           <li>
-            <a href="#">Projects</a>
+            <a href="#project">Projects</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
 
       <div class="github-codepen-linkedin">
-        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="github"><i class="fab fa-github"></i></a>
-        <a href="#" class="codepen"><i class="fab fa-codepen"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.github.com/" target="_blank" class="github"><i class="fab fa-github"></i></a>
+        <a href="https://www.codepen.io/" target="_blank" class="codepen"><i class="fab fa-codepen"></i></a>
       </div>
     </header>
 
-    <main class="hero">
+    <main id="landingPage" class="hero">
       <section class="introduction">
         <div class="names">
           <p class="name1">mads</p>
@@ -61,12 +59,12 @@
           <p class="name3">Front end developer</p>
         </div>
         <div class="box-image">
-          <img src="boxed.svg" alt="" class="hero-image">
+          <img src="img/boxed.svg" alt="" class="hero-image">
         </div>
       </section>
     </main>
 
-    <section class="projects">
+    <section id="project" class="projects">
       <div id="container">
         <div id="inner">
           <h1 class="project-title">Projects <br> coming soon</h1>
@@ -74,8 +72,8 @@
       </div>
     </section>
 
-    <section class="skillset">
-      <h1 class="skillset__headline">Proficient in</h1>
+    <section id="about" class="skillset">
+      <h1 class="skillset__headline">Proficient with</h1>
       <ul class="coding__skills">
         <li class="js">
           <p class="skillset__description">Javascript & jQuery scripting</p>
@@ -96,7 +94,7 @@
     </section>
 
 
-    <footer class="footer__contact">
+    <footer id="contact" class="footer__contact">
       <p class="reach-out">reach out!</p>
       <table class="contact-links">
         <thead>

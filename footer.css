@@ -8,6 +8,7 @@ body {
   place-content: center;
   background: linear-gradient(#09204d, #010817);
   background-image: linear-gradient(to right bottom, #09204d, #152e6b, #243b89, #3649a9, #4b57c9, #5255c9, #5852c9, #5f4fc9, #543caa, #472a8c, #3a186f, #2b0654);
+  margin-top: 1em;
 }
 .reach-out {
   font-size: 5vw;
@@ -38,13 +39,13 @@ th a {
   background-size: contain;
 }
 .contact-links th.whatsapp::before {
-  background-image: url(whatsapp.svg);
+  background-image: url(img/whatsapp.svg);
 }
 .contact-links th.mailto::before {
-  background-image: url(paper-plane.svg);
+  background-image: url(img/paper-plane.svg);
 }
 .contact-links th.linkedin::before {
-  background-image: url(linkedin.svg);
+  background-image: url(img/linkedin.svg);
 }
 @media only screen and (max-width: 800px) {
   .contact-links th::before {
