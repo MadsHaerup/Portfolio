@@ -1,0 +1,26 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+#container {
+  perspective: 25px;
+}
+#inner {
+  width: 53vw;
+  height: 26vw;
+  background-color: white;
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  display: grid;
+}
+.project-title {
+  place-self: center;
+  font-size: 5vw;
+  font-weight: 700;
+  color: #20123a;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
