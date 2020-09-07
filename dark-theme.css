@@ -1,0 +1,16 @@
+body, .introduction {
+  color: #eee;
+  background: #212F45;
+}
+.js, .css, .html, .scrum, .git {
+  background-image: linear-gradient(to right bottom, #212f45, #203146, #1e3348, #1d3549, #1c374a, #1a3b4d, #183e50, #164252, #124857, #0c4e5b, #08545e, #065a60);
+}
+.project-title, .skillset__headline, .skillset__description, body a, .name1, .name2, .name3, .nav-links li a, .linkedin, .github, .codepen {
+  color: #fffbfb;
+}
+header, #inner, .footer__contact, .box-image {
+  background-image: linear-gradient(to right bottom, #212f45, #203146, #1e3348, #1d3549, #1c374a, #1a3b4d, #183e50, #164252, #124857, #0c4e5b, #08545e, #065a60);
+}
+.bar1, .bar2, .bar3 {
+  background-color: #fff;
+}

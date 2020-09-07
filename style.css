@@ -1,3 +1,9 @@
+@import "header.css";
+@import "button-theme-toggle.css";
+@import "main-section.css";
+@import "projects.css";
+@import "skillset.css";
+@import "footer.css";
 body {
   font-family: 'Inter', sans-serif;
   background: #fffbfb;
@@ -34,6 +40,6 @@ html {
 }
 @media only screen and (max-width: 600px) {
   #wrapper {
-    grid-template-rows: 1.1fr 1fr 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
   }
 }
