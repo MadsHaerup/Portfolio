@@ -1,0 +1,134 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────────── */
+
+
+/* ────Bar Menu─────────────────────────────────────────────────────────────────────── */
+
+#burgerMenu {
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  margin: 1em;
+  z-index: 3;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────────── */
+
+
+/* Header───────────────────────────────────────────────────────────────────────── */
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  background: #fffbfb;
+  z-index: 2;
+}
+header.current {
+  box-shadow: 0px 20px 60px rgba(10, 51, 51, 0.2);
+  opacity: 0.8;
+}
+
+/* Navbar && links───────────────────────────────────────────────────────────────────────── */
+
+nav {
+  display: grid;
+}
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+nav li a {
+  text-decoration: none;
+  color: #20123a;
+}
+nav li a:hover {
+  text-decoration: underline;
+}
+.link-logo1, .link-logo2 {
+  place-self: center;
+  grid-column: 1/2;
+}
+.link-logo2 {
+  display: none;
+}
+
+/* Social media icons───────────────────────────────────────────────────────────────────────────── */
+
+.github-codepen-linkedin {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-self: center;
+  font-size: 3vw;
+}
+.linkedin, .github, .codepen {
+  color: #321c64;
+}
+
+/* ─Responsive─────────────────────────────────────────────────────────────── */
+
+@media only screen and (max-width: 800px) {
+  .nav-links {
+    font-size: 3vw;
+  }
+  .nav-links li:nth-child(1), .nav-links li:nth-child(2) {
+    padding-right: 1em;
+  }
+  .github-codepen-linkedin {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .link-logo1 {
+    display: none;
+  }
+  .link-logo2 {
+    display: block;
+  }
+  .nav-links {
+    grid-template-columns: 1fr;
+    font-size: 4vw;
+  }
+  .nav-links li:nth-child(1), .nav-links li:nth-child(2) {
+    margin-bottom: 1em;
+    padding-right: 0;
+  }
+  .github-codepen-linkedin a {
+    margin-bottom: 0.2em;
+    font-size: 7vw;
+  }
+}

@@ -1,0 +1,58 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+.footer__contact {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  place-content: center;
+  background: linear-gradient(#09204d, #010817);
+  background-image: linear-gradient(to right bottom, #09204d, #152e6b, #243b89, #3649a9, #4b57c9, #5255c9, #5852c9, #5f4fc9, #543caa, #472a8c, #3a186f, #2b0654);
+  margin-top: 1em;
+}
+.reach-out {
+  font-size: 5vw;
+  margin: 0;
+  place-self: center;
+  color: #20123a;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 1em;
+  color: #fff;
+}
+th a {
+  color: #fff;
+  font-size: 2vw;
+  text-decoration: none;
+  padding: 1em;
+}
+.contact-links {
+  height: 100px;
+  margin: 1em;
+}
+.contact-links th::before {
+  content: "";
+  display: block;
+  margin: 0 auto .5rem;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+}
+.contact-links th.whatsapp::before {
+  background-image: url(img/whatsapp.svg);
+}
+.contact-links th.mailto::before {
+  background-image: url(img/paper-plane.svg);
+}
+.contact-links th.linkedin::before {
+  background-image: url(img/linkedin.svg);
+}
+@media only screen and (max-width: 800px) {
+  .contact-links th::before {
+    width: 50px;
+    height: 50px;
+  }
+  th a {
+    font-size: 3vw;
+  }
+}

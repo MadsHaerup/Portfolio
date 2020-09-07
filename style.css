@@ -1,0 +1,45 @@
+@import "header.css";
+@import "button-theme-toggle.css";
+@import "main-section.css";
+@import "projects.css";
+@import "skillset.css";
+@import "footer.css";
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fffbfb;
+}
+html {
+  scroll-behavior: smooth;
+}
+#wrapper {
+  display: grid;
+  margin: 0 auto;
+  grid-template-areas: "top" "hero" "pro" "skill" "foot";
+  grid-template-rows: 1fr 3fr 3fr 3fr 2fr;
+  grid-template-columns: 1fr;
+}
+#wrapper>#top {
+  grid-area: top;
+}
+#wrapper>.hero {
+  grid-area: hero;
+}
+#wrapper>.projects {
+  grid-area: pro;
+}
+#wrapper>.skillset {
+  grid-area: skill;
+}
+#wrapper>.footer__contact {
+  grid-area: foot;
+}
+@media only screen and (max-width: 900px) {
+  #wrapper {
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
+  }
+}
