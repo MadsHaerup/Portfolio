@@ -2,8 +2,14 @@
 @import "button-theme-toggle.css";
 @import "main-section.css";
 @import "projects.css";
+@import "drag.css";
 @import "skillset.css";
 @import "footer.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: 'Inter', sans-serif;
   background: #fffbfb;
@@ -11,35 +17,14 @@ body {
 html {
   scroll-behavior: smooth;
 }
-#wrapper {
-  display: grid;
-  margin: 0 auto;
-  grid-template-areas: "top" "hero" "pro" "skill" "foot";
-  grid-template-rows: 1fr 3fr 3fr 3fr 2fr;
-  grid-template-columns: 1fr;
-}
-#wrapper>#top {
-  grid-area: top;
-}
-#wrapper>.hero {
-  grid-area: hero;
-}
-#wrapper>.projects {
-  grid-area: pro;
-}
-#wrapper>.skillset {
-  grid-area: skill;
-}
-#wrapper>.footer__contact {
-  grid-area: foot;
-}
-@media only screen and (max-width: 900px) {
-  #wrapper {
-    grid-template-rows: 1fr 2fr 1fr 2fr 1fr;
-  }
-}
 @media only screen and (max-width: 600px) {
-  #wrapper {
-    grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
+  .inner {
+    width: 60vw;
+    height: 40vw;
+    background-color: white;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+    margin-right: 0.3em;
   }
 }
