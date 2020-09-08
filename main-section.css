@@ -7,7 +7,7 @@ body {
   font-family: 'Inter', sans-serif;
 }
 .hero {
-  margin-top: 1em;
+  margin-top: 12em;
 }
 .introduction {
   display: grid;
@@ -85,5 +85,16 @@ body {
 @media only screen and (min-width: 1000px) {
   .name1, .name2 {
     font-size: 8vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .introduction {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .names {
+    grid-column: 2/4;
+  }
+  .box-image {
+    grid-column: 2/4;
   }
 }

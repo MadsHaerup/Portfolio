@@ -3,9 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: 'Inter', sans-serif;
-}
 .coding__skills {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -59,4 +56,14 @@ body {
   .coding__skills {
     grid-template-columns: 1fr;
   }
+}
+.coding__skills {
+  perspective: 25px;
+}
+.js, .css, .html, .scrum, .git {
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
 }
